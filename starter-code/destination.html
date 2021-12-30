@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Animate On Scroll lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/starter-code/css/main.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body id="destination">
+    <!-- header -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="./index.html">
+          <img src="./assets/shared/logo.svg" alt="Space Logo" />
+        </a>
+      </div>
+      <div class="header__toggler" id="nav-toggler">
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="hamburger" />
+        <img src="./assets/shared/icon-close.svg" alt="" id="close" />
+      </div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav--links-container">
+          <li class="header__nav--links">
+            <a class="base" href="./index.html"
+              ><span class="link-index">00</span>Home</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="#"
+              ><span class="link-index">01</span>Destination</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./crew.html"
+              ><span class="link-index">02</span>Crew</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./technology.html"
+              ><span class="link-index">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h5 data-aos="fade-right" data-aos-duration="600">
+      <span>01</span>Pick your destination
+    </h5>
+
+    <main id="destination-content" class="destination container">
+      <div id="destination-output">
+        <div
+          class="destination__image"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
+          <img
+            src="./assets/destination/image-moon.webp"
+            alt=""
+            id="dest-image"
+          />
+        </div>
+
+        <div class="destination__tabs">
+          <ul
+            class="destination__tabs--links"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <li data-index="0" class="base active-tab">Moon</li>
+            <li data-index="1" class="base">Mars</li>
+            <li data-index="2" class="base">Europa</li>
+            <li data-index="3" class="base">Titan</li>
+          </ul>
+
+          <h2 data-aos="fade-right" data-aos-duration="1100" id="dest-name">
+            Moon
+          </h2>
+
+          <p data-aos="fade-right" data-aos-duration="1300" id="dest-desc">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+
+          <div class="destination__stats">
+            <div data-aos="fade-right" data-aos-duration="1500">
+              <small>Avg. distance</small>
+              <h6 id="dest-distance">384,400 km</h6>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-right"
+            >
+              <small>Est. travel time</small>
+              <h6 id="dest-time">3 days</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js file -->
+    <script src="/starter-code/js/script.js"></script>
+  </body>
+</html>

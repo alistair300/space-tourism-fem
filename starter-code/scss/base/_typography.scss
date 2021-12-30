@@ -1,0 +1,118 @@
+// fonts import
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h5,
+small,
+.base {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+
+  @include forMedium {
+    font-size: 150px;
+  }
+}
+
+h2 {
+  font-size: 56px;
+
+  @include forMedium {
+    font-size: 80px;
+  }
+
+  @include forLarge {
+    font-size: 100px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  @include forMedium {
+    font-size: 40px;
+  }
+
+  @include forLarge {
+    font-size: 56px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  mix-blend-mode: normal;
+  opacity: 0.5 !important;
+
+  @include forMedium {
+    font-size: 24px;
+  }
+
+  @include forLarge {
+    font-size: 32px;
+  }
+}
+
+h5 {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: $grayish-blue;
+
+  @include forMedium {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  @include forLarge {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+  }
+}
+
+h6 {
+  font-size: 28px;
+}
+
+small {
+  color: $grayish-blue;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+.base {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+
+p {
+  font-size: 15px;
+  color: $grayish-blue;
+  line-height: 25px;
+
+  @include forMedium {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  @include forLarge {
+    font-size: 18px;
+  }
+}

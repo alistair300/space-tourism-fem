@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Animate On Scroll lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/starter-code/css/main.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body id="index">
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">
+          <img src="./assets/shared/logo.svg" alt="Space Logo" />
+        </a>
+      </div>
+      <div class="header__toggler" id="nav-toggler">
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="hamburger" />
+        <img src="./assets/shared/icon-close.svg" alt="" id="close" />
+      </div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav--links-container">
+          <li class="header__nav--links">
+            <a class="base" href="#"><span class="link-index">00</span>Home</a>
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./destination.html"
+              ><span class="link-index">01</span>Destination</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./crew.html"
+              ><span class="link-index">02</span>Crew</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./technology.html"
+              ><span class="link-index">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="index container">
+      <div class="index__content">
+        <h5 data-aos="fade-right">So, you want to travel to</h5>
+        <h1 data-aos="fade-right" data-aos-duration="1000">Space</h1>
+        <p data-aos="fade-right" data-aos-duration="1300">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+
+      <div data-aos="fade-right" data--aos-duration="1600" class="index__cta">
+        Explore
+      </div>
+    </main>
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js file -->
+    <script src="/starter-code/js/script.js"></script>
+  </body>
+</html>

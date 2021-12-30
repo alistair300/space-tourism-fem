@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Animate On Scroll lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/starter-code/css/main.css" />
+
+    <title>Frontend Mentor | Space Tourism</title>
+  </head>
+  <body id="crew">
+    <!-- header -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">
+          <img src="./assets/shared/logo.svg" alt="Space Logo" />
+        </a>
+      </div>
+      <div class="header__toggler" id="nav-toggler">
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="hamburger" />
+        <img src="./assets/shared/icon-close.svg" alt="" id="close" />
+      </div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav--links-container">
+          <li class="header__nav--links">
+            <a class="base" href="./index.html"
+              ><span class="link-index">00</span>Home</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./destination.html"
+              ><span class="link-index">01</span>Destination</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="#"><span class="link-index">02</span>Crew</a>
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./technology.html"
+              ><span class="link-index">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h5 data-aos="fade-right" data-aos-duration="600">
+      <span>02</span>Meet your crew
+    </h5>
+
+    <!-- main -->
+    <main class="container crew">
+      <div class="crew__image" data-aos="fade-right" data-aos-duration="700">
+        <img
+          src="./assets/crew/image-douglas-hurley.webp"
+          alt=""
+          id="crew-image"
+        />
+      </div>
+
+      <div class="crew__tab-container">
+        <ul
+          class="crew__tab-links"
+          data-aos="fade-right"
+          data-aos-duration="900"
+        >
+          <li data-index="0"></li>
+          <li data-index="1"></li>
+          <li data-index="2"></li>
+          <li data-index="3"></li>
+        </ul>
+
+        <h4 id="crew-role" data-aos="fade-right" data-aos-duration="1100">
+          Commander
+        </h4>
+        <h3 id="crew-name" data-aos="fade-right" data-aos-duration="1300">
+          Douglas Hurley
+        </h3>
+        <p id="crew-bio" data-aos="fade-right" data-aos-duration="1500">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+    </main>
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js file -->
+    <script src="/starter-code/js/script.js"></script>
+  </body>
+</html>

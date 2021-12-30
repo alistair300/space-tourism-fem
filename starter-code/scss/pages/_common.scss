@@ -1,0 +1,42 @@
+h5 {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: $white;
+
+  @include forMedium {
+    text-align: left;
+    margin-left: 3.4375rem;
+  }
+
+  @include forLarge {
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+
+  span {
+    margin-right: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}
+
+.container {
+  padding: 0 24px;
+
+  @include forMedium {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @include forLarge {
+    width: 75%;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+a[href='#'] {
+  &::after {
+    transform: scale(1);
+  }
+}

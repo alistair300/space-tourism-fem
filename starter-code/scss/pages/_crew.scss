@@ -1,0 +1,156 @@
+body#crew {
+  min-height: 100vh;
+  background-image: url(/starter-code/assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  @include forMedium {
+    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+  }
+
+  @include forLarge {
+    background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+  }
+
+  .container {
+    @include forMedium {
+      width: 60%;
+    }
+
+    @include forLarge {
+      width: 80%;
+    }
+  }
+}
+
+.crew {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include forLarge {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid #383b4b;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      border-bottom: none;
+      position: absolute;
+      bottom: 0;
+      width: 55%;
+    }
+
+    @include forMedium {
+      order: 1;
+      border-bottom: none;
+    }
+
+    img {
+      width: 55%;
+
+      @include forMedium {
+        width: 100%;
+      }
+
+      @include forLarge {
+        width: auto;
+        position: relative;
+        left: 17%;
+      }
+    }
+  }
+
+  &__tab-container {
+    display: grid;
+    grid-template-areas:
+      'tab-links tab-links'
+      'sub-header-text sub-header-text'
+      'header-text header-text'
+      'description-text description-text';
+
+    @include forMedium {
+      grid-template-areas:
+        'sub-header-text sub-header-text'
+        'header-text header-text'
+        'description-text description-text'
+        'tab-links tab-links';
+    }
+  }
+
+  &__tab-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    grid-area: tab-links;
+    margin-bottom: 2rem;
+
+    @include forMedium {
+      margin-bottom: 0;
+      margin-top: 2.5rem;
+    }
+
+    @include forLarge {
+      justify-content: start;
+      margin-top: 21%;
+    }
+
+    & li {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      mix-blend-mode: normal;
+      opacity: 0.17;
+      border-radius: 50%;
+      position: relative;
+      z-index: 5;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+        transform: scale(1.2);
+      }
+
+      &.active-tab {
+        opacity: 1;
+      }
+    }
+  }
+
+  h4,
+  h3,
+  p {
+    text-align: center;
+
+    @include forLarge {
+      text-align: left;
+    }
+  }
+
+  h3 {
+    grid-area: header-text;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    grid-area: sub-header-text;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    grid-area: description-text;
+
+    @include forLarge {
+      max-width: 440px;
+    }
+  }
+}

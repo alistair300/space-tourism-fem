@@ -1,0 +1,14 @@
+$medium: 768;
+$large: 1110;
+
+@mixin forMedium {
+  @media only screen and (min-width: ($medium * 1px)) {
+    @content;
+  }
+}
+
+@mixin forLarge {
+  @media only screen and (min-width: ($large * 1px)) {
+    @content;
+  }
+}

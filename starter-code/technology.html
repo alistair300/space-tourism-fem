@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Animate On Scroll lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/starter-code/css/main.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body id="technology">
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">
+          <img src="./assets/shared/logo.svg" alt="Space Logo" />
+        </a>
+      </div>
+      <div class="header__toggler" id="nav-toggler">
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="hamburger" />
+        <img src="./assets/shared/icon-close.svg" alt="" id="close" />
+      </div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav--links-container">
+          <li class="header__nav--links">
+            <a class="base" href="./index.html"
+              ><span class="link-index">00</span>Home</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./destination.html"
+              ><span class="link-index">01</span>Destination</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="./crew.html"
+              ><span class="link-index">02</span>Crew</a
+            >
+          </li>
+          <li class="header__nav--links">
+            <a class="base" href="#"
+              ><span class="link-index">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h5 data-aos="fade-right" data-aos-duration="700">
+      <span>03</span>Space launch 101
+    </h5>
+
+    <main class="technology">
+      <!-- image -->
+      <div
+        class="technology__image"
+        data-aos="fade-right"
+        data-aos-duration="900"
+      >
+        <img
+          src="./assets/technology/image-launch-vehicle-landscape.jpg"
+          alt=""
+          id="sr-only"
+        />
+
+        <img
+          src="./assets/technology/image-launch-vehicle-portrait.jpg"
+          alt=""
+          id="desktop"
+        />
+      </div>
+
+      <!-- content -->
+      <div class="technology__tabs container">
+        <ul
+          class="technology__tabs-links"
+          data-aos="fade-right"
+          data-aos-duration="1100"
+        >
+          <li data-index="0" class="active-tab">1</li>
+          <li data-index="1">2</li>
+          <li data-index="2">3</li>
+        </ul>
+
+        <div>
+          <div class="base" data-aos="fade-right" data-aos-duration="1500">
+            The terminology...
+          </div>
+
+          <h3 data-aos="fade-right" data-aos-duration="1700" id="tech-name">
+            Launch vehicle
+          </h3>
+
+          <p data-aos="fade-right" data-aos-duration="1900" id="tech-desc">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js file -->
+    <script src="/starter-code/js/script.js"></script>
+  </body>
+</html>
